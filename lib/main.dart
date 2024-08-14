@@ -69,7 +69,7 @@ class _Widget3DModelState extends State<Widget3DModel> {
     controller = Flutter3DController();
     Future.delayed(Duration(seconds: 10), () async {
       setState(() {
-        controller.playAnimation(animationName: "idle");
+        controller.playAnimation(animationName: "idle" );
       });
     });
   }
