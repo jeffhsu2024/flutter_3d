@@ -26,13 +26,18 @@ class MyApp extends StatelessWidget {
                                 animationName: "SmolAnimationsRESOURCE");
                           },
                           child: Text("SmolAnimationsRESOURCE")),
-                      SizedBox(height: 10.0,),
+                      SizedBox(
+                        height: 10.0,
+                      ),
                       ElevatedButton(
                           onPressed: () {
-                            controller.playAnimation(animationName: "ParadeWalkLeft");
+                            controller.playAnimation(
+                                animationName: "ParadeWalkLeft");
                           },
                           child: Text("ParadeWalkLeft")),
-                      SizedBox(height: 10.0,),
+                      SizedBox(
+                        height: 10.0,
+                      ),
                       ElevatedButton(
                           onPressed: () {
                             controller.playAnimation(animationName: "idle");
@@ -44,7 +49,6 @@ class MyApp extends StatelessWidget {
               )
             ],
           ),
-
         ],
       ),
     );
@@ -63,7 +67,7 @@ class _Widget3DModelState extends State<Widget3DModel> {
   void initState() {
     super.initState();
     controller = Flutter3DController();
-    Future.delayed(Duration(seconds: 10), () async{
+    Future.delayed(Duration(seconds: 10), () async {
       setState(() {
         controller.playAnimation(animationName: "idle");
       });
